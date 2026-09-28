@@ -39,6 +39,15 @@ GET /api/tickets
 
 The endpoint returns every ticket in the in-memory store.
 
+Filter the response by supplying an optional `status` query parameter:
+
+```http
+GET /api/tickets?status=open
+```
+
+Allowed values are `open`, `in_progress`, and `closed`. The API returns HTTP
+400 with a JSON error when the value is unsupported.
+
 ## Starting over
 
 Work starts in this folder on the `demo-exercise` branch. The `solution` branch holds a reference answer in the same folder. To discard all your changes in this folder:
