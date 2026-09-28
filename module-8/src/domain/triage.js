@@ -3,10 +3,11 @@ const allowedCustomerTiers = new Set(["standard", "gold", "platinum"]);
 const allowedServiceImpacts = new Set(["none", "degraded", "blocked"]);
 
 function requireEnum(name, value, allowed) {
-  if (typeof value !== "string" || !allowed.has(value)) {
+  const normalized = typeof value === "string" ? value.trim().toLowerCase() : "";
+  if (!allowed.has(normalized)) {
     throw new Error(`invalid ${name}`);
   }
-  return value;
+  return normalized;
 }
 
 export function triageTicket(input) {
@@ -22,6 +23,9 @@ export function triageTicket(input) {
     allowedServiceImpacts,
   );
 
+  const isPlatinumBlocked =
+    customerTier === "platinum" && serviceImpact === "blocked";
+
   if (severity === "critical") {
     return {
       severity,
@@ -29,6 +33,21 @@ export function triageTicket(input) {
       serviceImpact,
       priority: "P1",
       queue: "incident-response",
+      decisionReasons: [
+        "critical-severity",
+        ...(isPlatinumBlocked ? ["platinum-blocked-service"] : []),
+      ],
+    };
+  }
+
+  if (isPlatinumBlocked) {
+    return {
+      severity,
+      customerTier,
+      serviceImpact,
+      priority: "P1",
+      queue: "rapid-response",
+      decisionReasons: ["platinum-blocked-service"],
     };
   }
 
@@ -39,6 +58,7 @@ export function triageTicket(input) {
       serviceImpact,
       priority: "P2",
       queue: "specialist-support",
+      decisionReasons: ["high-severity"],
     };
   }
 
@@ -48,5 +68,6 @@ export function triageTicket(input) {
     serviceImpact,
     priority: "P3",
     queue: "general-support",
+    decisionReasons: ["standard-routing"],
   };
 }

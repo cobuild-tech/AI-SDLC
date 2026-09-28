@@ -69,8 +69,13 @@ export function createApp({ apiKey, store, auditSink }) {
           requesterEmail: input.requesterEmail.trim(),
         });
 
-        // Existing audit behavior predates the current data-classification policy.
-        auditSink.write({ action: "ticket.created", ticket });
+        auditSink.write({
+          action: "ticket.created",
+          ticketId: ticket.id,
+          priority: ticket.priority,
+          queue: ticket.queue,
+          reasonCodes: ticket.decisionReasons,
+        });
         return sendJson(response, 201, ticket);
       }
 
