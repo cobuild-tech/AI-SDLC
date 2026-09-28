@@ -15,7 +15,7 @@ export function handleListTickets(query = {}) {
 
   const priority = query.priority?.toLowerCase();
   if (priority && !VALID_PRIORITIES.includes(priority)) {
-    return { status: 400, body: { message: "Invalid priority" } };
+    return invalidQuery("INVALID_PRIORITY", "priority is not supported");
   }
 
   const items = tickets.filter((ticket) => {

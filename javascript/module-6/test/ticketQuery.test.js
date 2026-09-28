@@ -29,3 +29,11 @@ test("filters by priority case-insensitively and composes with status", () => {
   const composed = handleListTickets({ status: "open", priority: "high" });
   assert.deepEqual(composed.body.items.map((ticket) => ticket.id), [2]);
 });
+
+test("uses the standard error envelope for an invalid priority", () => {
+  const result = handleListTickets({ priority: "urgent" });
+  assert.deepEqual(result, {
+    status: 400,
+    body: { error: { code: "INVALID_PRIORITY", message: "priority is not supported" } },
+  });
+});
