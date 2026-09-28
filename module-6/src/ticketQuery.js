@@ -13,7 +13,15 @@ export function handleListTickets(query = {}) {
     return invalidQuery("INVALID_STATUS", "status is not supported");
   }
 
-  const items = tickets.filter((ticket) => !status || ticket.status === status);
+  const priority = query.priority?.toLowerCase();
+  if (priority && !VALID_PRIORITIES.includes(priority)) {
+    return { status: 400, body: { message: "Invalid priority" } };
+  }
+
+  const items = tickets.filter((ticket) => {
+    if (status && ticket.status !== status) return false;
+    if (priority && ticket.priority !== priority) return false;
+    return true;
+  });
   return { status: 200, body: { items, total: items.length } };
 }
-
