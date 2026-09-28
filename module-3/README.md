@@ -1,44 +1,9 @@
-# Ticket Service: Context, Memory and Skills Lab
+# Module 3: Context, memory and skills
 
-A small TypeScript and Express API used in the Module 3 hands-on lab.
+The same ticket service in two folders, so you can build one feature twice and see what repository context changes.
 
-## Requirements
+- [`baseline-repo/`](baseline-repo/): no context. No rules, no task contract, no decisions, one old note. Built from a one-line prompt.
+- [`context-ready-repo/`](context-ready-repo/): full context. Rules, task contract, decision record, architecture notes, project memory and a skill. Built from a structured prompt.
+- [`compare-results.mjs`](compare-results.mjs): scores both folders against the same acceptance criteria. Run `node compare-results.mjs` from this folder.
 
-- Node.js 20 or later
-- npm 10 or later
-
-## Setup
-
-```bash
-npm install
-npm test
-npm run lint
-```
-
-## Run the API
-
-```bash
-npm run dev
-```
-
-The server listens on `http://localhost:3000` by default.
-
-## Endpoints
-
-### Health check
-
-```http
-GET /health
-```
-
-### List tickets
-
-```http
-GET /api/tickets
-```
-
-The endpoint returns every ticket in the in-memory store.
-
-## Starting branch
-
-Work starts in this folder on the `demo-exercise` branch. The `solution` branch holds a reference answer in the same folder.
+Follow [`PARTICIPANT-GUIDE.md`](PARTICIPANT-GUIDE.md). Start your agent inside `baseline-repo` or `context-ready-repo`, never in this folder.
