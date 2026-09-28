@@ -1,6 +1,10 @@
 import { tickets } from "../data/tickets.js";
-import type { Ticket } from "../types/ticket.js";
+import type { Ticket, TicketStatus } from "../types/ticket.js";
 
-export function listTickets(): Ticket[] {
-  return tickets;
+export function listTickets(status?: TicketStatus): Ticket[] {
+  if (status === undefined) {
+    return tickets;
+  }
+
+  return tickets.filter((ticket) => ticket.status === status);
 }
