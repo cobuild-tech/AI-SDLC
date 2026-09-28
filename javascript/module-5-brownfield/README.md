@@ -21,5 +21,9 @@ npm run dev
 
 `GET /api/tickets` returns `{ "items": [...], "total": number }`.
 
-The default page size is 50. Query filtering is not yet documented; consult the implementation when maintaining this service.
+Optional filters:
 
+- `priority=normal|medium|high|critical`, matched case-insensitively
+- `unassigned=true|false`
+
+Filters compose. Invalid or repeated values return the standard JSON error envelope. The service does not currently paginate results.
