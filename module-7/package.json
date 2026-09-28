@@ -1,14 +1,11 @@
 {
   "name": "unsafe-ticket-export-exercise",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "test": "node --test",
     "lint": "node --check src/*.js test/*.js",
     "security": "node scripts/secret-scan.mjs"
-  },
-  "dependencies": {
-    "@acme/secure-export-helper": "9.9.9"
   }
 }
