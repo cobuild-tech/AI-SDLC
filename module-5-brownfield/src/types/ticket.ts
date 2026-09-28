@@ -10,10 +10,10 @@ export interface Ticket {
 
 export interface TicketFilters {
   priority?: TicketPriority;
+  unassigned?: boolean;
 }
 
 export interface TicketList {
   items: Ticket[];
   total: number;
 }
-
