@@ -20,5 +20,5 @@ See `AGENTS.md` for repository rules and `tasks/` for active work.
 
 ## Branches
 
-- `demo-start`: where you work
-- `implementation`, `critical-review`, `approved`: a reference run of the same task, one stage per branch
+- `demo-exercise` branch: where you work
+- `solution` branch: a reference run of the same task, one commit per stage (implementation, critical review, approved). See them with `git log --oneline solution -- .`

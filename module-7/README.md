@@ -11,8 +11,8 @@ npm run security
 ```
 
 Do not run `npm install`. These commands use only Node.js built-ins and run
-without installing anything. On the `unsafe-change` and `answer-key`
-branches, `package.json` deliberately lists an unapproved dependency
+without installing anything. In the agent's change on the `demo-exercise`
+branch, `package.json` deliberately lists an unapproved dependency
 (`@acme/secure-export-helper`) that does not exist in any registry -- that is
 one of the exercise's planted findings, not a real requirement, and
 `npm install` will fail with a 404 if you try it.

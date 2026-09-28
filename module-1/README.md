@@ -39,12 +39,11 @@ GET /api/tickets
 
 The endpoint returns every ticket in the in-memory store.
 
-## Starting branch
+## Starting over
 
-Work starts on the `demo-start` branch. To discard all local changes and return to it:
+Work starts in this folder on the `demo-exercise` branch. The `solution` branch holds a reference answer in the same folder. To discard all your changes in this folder:
 
 ```bash
-git switch demo-start
-git reset --hard demo-start
-git clean -fd
+git restore --staged --worktree -- .
+git clean -fd -- .
 ```

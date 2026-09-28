@@ -66,5 +66,5 @@ All ticket endpoints require the `x-api-key` header.
 
 ## Branches
 
-- `main`: where you work
-- `solution`: a reference answer
+- `demo-exercise`: where you work
+- `solution`: a reference answer, in the same folder

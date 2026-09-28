@@ -1,6 +1,6 @@
 import { execFileSync } from "node:child_process";
 
-const base = process.env.BASE_REF ?? "demo-start";
+const base = process.env.BASE_REF ?? "demo-exercise";
 
 function gitFiles(args) {
   try {
@@ -12,9 +12,9 @@ function gitFiles(args) {
 
 // Committed changes since the base branch, plus uncommitted and untracked files.
 const changed = [
-  ...gitFiles(["diff", "--name-only", `${base}...HEAD`]),
-  ...gitFiles(["diff", "--name-only", "HEAD"]),
-  ...gitFiles(["ls-files", "--others", "--exclude-standard"])
+  ...gitFiles(["diff", "--name-only", "--relative", `${base}...HEAD`, "--", "."]),
+  ...gitFiles(["diff", "--name-only", "--relative", "HEAD", "--", "."]),
+  ...gitFiles(["ls-files", "--others", "--exclude-standard", "--", "."])
 ];
 
 const protectedPrefixes = [".github/workflows/", ".github/CODEOWNERS", "data/seed-tickets.json", "docs/architecture.md"];

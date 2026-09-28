@@ -10,6 +10,6 @@ You are starting a new internal API from a written product requirement. The repo
 
 ## Branches
 
-- `starter`: where you work
-- `solution`: a reference answer
-- `one-shot-example`: what an uncontrolled "build everything" prompt produces
+- `demo-exercise` branch, `module-5-greenfield` folder: where you work
+- `solution` branch, `module-5-greenfield` folder: a reference answer
+- `solution` branch, `module-5-greenfield-one-shot` folder: what an uncontrolled "build everything" prompt produces

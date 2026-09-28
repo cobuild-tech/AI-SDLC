@@ -41,4 +41,4 @@ The endpoint returns every ticket in the in-memory store.
 
 ## Starting branch
 
-Work starts on the `demo-start` branch. The `solution` branch holds a reference answer.
+Work starts in this folder on the `demo-exercise` branch. The `solution` branch holds a reference answer in the same folder.
