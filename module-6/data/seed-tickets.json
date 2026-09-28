@@ -1,0 +1,8 @@
+[
+  { "id": 1, "title": "Checkout unavailable", "status": "open", "priority": "critical" },
+  { "id": 2, "title": "SSO setup", "status": "open", "priority": "high" },
+  { "id": 3, "title": "Invoice correction", "status": "closed", "priority": "medium" },
+  { "id": 4, "title": "Email update", "status": "open", "priority": "normal" },
+  { "id": 5, "title": "Export timing out", "status": "in_progress", "priority": "high" }
+]
+

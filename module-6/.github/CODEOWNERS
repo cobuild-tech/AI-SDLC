@@ -1,0 +1,5 @@
+* @application-team
+/docs/architecture.md @architecture-team
+/.github/workflows/ @platform-team
+/data/ @support-platform-owners
+

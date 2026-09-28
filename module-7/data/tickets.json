@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "title": "Checkout unavailable",
+    "status": "open",
+    "priority": "critical",
+    "customerEmail": "demo.customer@example.invalid",
+    "internalNotes": "Synthetic escalation record for training only"
+  },
+  {
+    "id": 2,
+    "title": "Invoice correction",
+    "status": "closed",
+    "priority": "medium",
+    "customerEmail": "sample.account@example.invalid",
+    "internalNotes": "Synthetic billing note for training only"
+  }
+]
+

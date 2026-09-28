@@ -1,0 +1,12 @@
+{
+  "name": "team-operating-model-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check src/ticketQuery.js && node --check test/ticketQuery.test.js",
+    "check:boundaries": "node scripts/check-boundaries.mjs"
+  }
+}
+
