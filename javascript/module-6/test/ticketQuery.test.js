@@ -22,3 +22,10 @@ test("uses the standard error envelope for an invalid status", () => {
   });
 });
 
+test("filters by priority case-insensitively and composes with status", () => {
+  const high = handleListTickets({ priority: "HIGH" });
+  assert.deepEqual(high.body.items.map((ticket) => ticket.id), [2, 5]);
+
+  const composed = handleListTickets({ status: "open", priority: "high" });
+  assert.deepEqual(composed.body.items.map((ticket) => ticket.id), [2]);
+});
