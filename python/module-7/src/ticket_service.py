@@ -7,4 +7,4 @@ tickets: list[dict[str, Any]] = json.loads(DATA_FILE.read_text(encoding="utf-8")
 
 
 def list_tickets() -> list[dict[str, Any]]:
-    return list(tickets)
+    return sorted(tickets, key=lambda ticket: ticket["id"], reverse=True)
