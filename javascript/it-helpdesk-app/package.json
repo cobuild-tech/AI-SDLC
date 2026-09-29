@@ -1,0 +1,13 @@
+{
+  "name": "it-helpdesk-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Practice app for the AI DLC workshop: a small IT helpdesk ticketing library.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.ts\""
+  }
+}
