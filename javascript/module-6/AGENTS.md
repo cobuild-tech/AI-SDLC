@@ -19,6 +19,7 @@ Run all three before requesting review. Report the exact command and outcome.
 ## Change discipline
 
 - Create one branch or worktree for each task.
+- Parallel tasks must not edit the same files.
 - Produce a plan before material edits and wait for approval.
 - Keep commits small and limited to the active task.
 - State assumptions and unresolved questions.

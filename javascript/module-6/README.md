@@ -14,7 +14,7 @@ No `npm install` is needed. These commands use only Node.js built-ins.
 
 ## Workflow
 
-Work begins from an approved task contract. Each agent task uses its own branch or worktree. Material changes require a plan. A human owner reviews the final change after CI and an independent critical review.
+Work begins from an approved task contract. Each agent task uses its own branch or worktree. This lab has two tasks: TEAM-201 filters the ticket list, and TEAM-202 adds a comment. They edit different files. Material changes require a plan. A human owner reviews the final change after CI and an independent critical review.
 
 See `AGENTS.md` for repository rules and `tasks/` for active work.
 
