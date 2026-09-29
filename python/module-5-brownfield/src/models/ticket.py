@@ -17,6 +17,7 @@ class Ticket(BaseModel):
 @dataclass(frozen=True)
 class TicketFilters:
     priority: TicketPriority | None = None
+    unassigned: bool | None = None
 
 
 class TicketList(BaseModel):
