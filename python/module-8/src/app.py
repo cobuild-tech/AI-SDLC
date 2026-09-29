@@ -83,8 +83,15 @@ def create_app(*, api_key: str | None, store: TicketStore, audit_sink: AuditSink
             }
         )
 
-        # Existing audit behavior predates the current data-classification policy.
-        audit_sink.write({"action": "ticket.created", "ticket": ticket})
+        audit_sink.write(
+            {
+                "action": "ticket.created",
+                "ticketId": ticket["id"],
+                "priority": ticket["priority"],
+                "queue": ticket["queue"],
+                "reasonCodes": ticket["decisionReasons"],
+            }
+        )
         return JSONResponse(status_code=201, content=ticket)
 
     @app.get("/tickets/{ticket_id}")
