@@ -25,7 +25,7 @@ You need Node.js 20+, Git, and a coding agent installed (see `SETUP-CHECKLIST.md
    git clone --branch demo-exercise https://github.com/cobuild-tech/AI-SDLC.git
    ```
 
-   This creates an `AI-SDLC` folder with one folder per module.
+   This creates an `AI-SDLC` folder with a `javascript` and a `python` folder, each with one folder per module.
 2. Open a terminal in `AI-SDLC/javascript/module-3` and install both repos:
 
    ```bash

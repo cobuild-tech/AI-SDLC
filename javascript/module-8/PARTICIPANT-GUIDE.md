@@ -20,7 +20,7 @@ You need Node.js 20+, Git, and a coding agent installed (see `SETUP-CHECKLIST.md
    git clone --branch demo-exercise https://github.com/cobuild-tech/AI-SDLC.git
    ```
 
-   This creates an `AI-SDLC` folder with one folder per module.
+   This creates an `AI-SDLC` folder with a `javascript` and a `python` folder, each with one folder per module.
 2. In VS Code, choose **File → Open Folder** and open the `AI-SDLC/javascript/module-8` folder. If VS Code asks whether to open the Git repository in a parent folder, click **Yes**.
 3. Open the terminal (**Terminal → New Terminal**) and run:
 
