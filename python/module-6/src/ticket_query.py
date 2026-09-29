@@ -19,5 +19,14 @@ def handle_list_tickets(query: dict[str, str] | None = None) -> dict[str, Any]:
     if status and status not in VALID_STATUSES:
         return invalid_query("INVALID_STATUS", "status is not supported")
 
-    items = [ticket for ticket in tickets if not status or ticket["status"] == status]
+    priority = query.get("priority", "").lower()
+    if priority and priority not in VALID_PRIORITIES:
+        return {"status": 400, "body": {"message": "Invalid priority"}}
+
+    items = [
+        ticket
+        for ticket in tickets
+        if (not status or ticket["status"] == status)
+        and (not priority or ticket["priority"] == priority)
+    ]
     return {"status": 200, "body": {"items": items, "total": len(items)}}

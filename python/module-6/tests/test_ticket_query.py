@@ -19,3 +19,11 @@ def test_uses_the_standard_error_envelope_for_an_invalid_status() -> None:
         "status": 400,
         "body": {"error": {"code": "INVALID_STATUS", "message": "status is not supported"}},
     }
+
+
+def test_filters_by_priority_case_insensitively_and_composes_with_status() -> None:
+    high = handle_list_tickets({"priority": "HIGH"})
+    assert [ticket["id"] for ticket in high["body"]["items"]] == [2, 5]
+
+    composed = handle_list_tickets({"status": "open", "priority": "high"})
+    assert [ticket["id"] for ticket in composed["body"]["items"]] == [2]
