@@ -1,0 +1,12 @@
+[
+  { "title": "forgot password", "description": "locked out after too many attempts, need a reset", "expected": { "category": "access", "team": "identity" } },
+  { "title": "vpn keeps dropping", "description": "disconnects every few minutes on home wifi", "expected": { "category": "network", "team": "network" } },
+  { "title": "need Slack", "description": "please install slack on my laptop", "expected": { "category": "software", "team": "service-desk" } },
+  { "title": "cracked screen", "description": "dropped my laptop and the screen is cracked", "expected": { "category": "hardware", "team": "hardware" } },
+  { "title": "is this phishing", "description": "email asking me to confirm my MFA code, looks fake", "expected": { "category": "security", "team": "security" } },
+  { "title": "shared drive access", "description": "need access to the marketing shared drive, manager approved", "expected": { "category": "access", "team": "identity" } },
+  { "title": "wifi in meeting room 4", "description": "cant get on the office wifi in room 4, other rooms fine", "expected": { "category": "network", "team": "network" } },
+  { "title": "Excel crashes", "description": "excel crashes every time I open the budget file", "expected": { "category": "software", "team": "service-desk" } },
+  { "title": "battery dying", "description": "battery only lasts 40 minutes now", "expected": { "category": "hardware", "team": "hardware" } },
+  { "title": "laptop stolen", "description": "my laptop was stolen from my car last night", "expected": { "category": "security", "team": "security" } }
+]

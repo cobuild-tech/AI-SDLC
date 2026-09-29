@@ -1,0 +1,12 @@
+[
+  { "query": "outlook keeps asking for my password after I changed it", "expectedSource": "password-and-mfa-reset.md" },
+  { "query": "authenticator app not showing push prompts on my new phone", "expectedSource": "password-and-mfa-reset.md" },
+  { "query": "vpn error gateway unreachable", "expectedSource": "vpn-troubleshooting.md" },
+  { "query": "vpn disconnects every few minutes on home wifi", "expectedSource": "vpn-troubleshooting.md" },
+  { "query": "how do I install figma", "expectedSource": "software-install-policy.md" },
+  { "query": "can I install teamviewer", "expectedSource": "software-install-policy.md" },
+  { "query": "my laptop is 4 years old can I get a new one", "expectedSource": "laptop-replacement-policy.md" },
+  { "query": "screen flickers when I move the lid", "expectedSource": "laptop-replacement-policy.md" },
+  { "query": "need access to finance-prod shared drive", "expectedSource": "access-request-policy.md" },
+  { "query": "is manager approval by email enough for access", "expectedSource": "access-request-policy.md" }
+]
