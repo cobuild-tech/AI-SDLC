@@ -1,0 +1,7 @@
+[
+  {"id": "T-101", "subject": "VPN drops", "description": "My VPN connects but disconnects after about one minute. It started this morning."},
+  {"id": "T-102", "subject": "Forgot password", "description": "I forgot my password and cannot sign in to my laptop."},
+  {"id": "T-103", "subject": "Install diagramming app", "description": "I need the approved diagramming application installed on my managed laptop."},
+  {"id": "T-104", "subject": "Production outage", "description": "All users cannot access the production order system. Please fix it urgently."},
+  {"id": "T-105", "subject": "Unclear issue", "description": "It doesn't work. Please help."}
+]

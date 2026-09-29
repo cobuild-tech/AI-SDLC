@@ -1,0 +1,50 @@
+[
+  {
+    "id": "KB-VPN-01",
+    "category": "vpn",
+    "title": "VPN disconnects or fails to connect",
+    "symptoms": "VPN disconnects after connecting, connection timeout, or authentication error",
+    "steps": [
+      "Confirm whether the corporate status page reports a VPN outage.",
+      "Disconnect and reconnect after checking the device clock and internet connection.",
+      "Record the VPN client version and exact error message if the issue continues."
+    ],
+    "escalate_when": "The status page shows an outage, multiple users are affected, or the error persists after these checks."
+  },
+  {
+    "id": "KB-PASSWORD-01",
+    "category": "password",
+    "title": "Forgotten password or locked account",
+    "symptoms": "Cannot sign in, forgotten password, or account locked",
+    "steps": [
+      "Use the approved self-service password reset portal.",
+      "If self-service fails, contact the service desk for identity verification.",
+      "Never share a password or one-time code in the ticket."
+    ],
+    "escalate_when": "The requester cannot pass identity verification, the account may be compromised, or the reset does not restore access."
+  },
+  {
+    "id": "KB-SOFTWARE-01",
+    "category": "software",
+    "title": "Install an approved application",
+    "symptoms": "Install software, license an application, or request an approved app",
+    "steps": [
+      "Confirm the application name, device, operating system, and business purpose.",
+      "Check the approved software catalog and its license requirements.",
+      "Use the managed software portal to request installation."
+    ],
+    "escalate_when": "The application is absent from the approved catalog or a license or admin approval is required."
+  },
+  {
+    "id": "KB-MFA-01",
+    "category": "password",
+    "title": "MFA prompt not arriving",
+    "symptoms": "No MFA prompt, lost authenticator device, or sign-in verification unavailable",
+    "steps": [
+      "Check device connectivity and the authenticator app's time settings.",
+      "Use an approved backup method if one is already registered.",
+      "Contact the service desk for verified recovery if no approved method works."
+    ],
+    "escalate_when": "The user has lost all factors, reports a suspicious prompt, or identity cannot be verified."
+  }
+]
