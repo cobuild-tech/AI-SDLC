@@ -27,3 +27,11 @@ def test_filters_by_priority_case_insensitively_and_composes_with_status() -> No
 
     composed = handle_list_tickets({"status": "open", "priority": "high"})
     assert [ticket["id"] for ticket in composed["body"]["items"]] == [2]
+
+
+def test_uses_the_standard_error_envelope_for_an_invalid_priority() -> None:
+    result = handle_list_tickets({"priority": "urgent"})
+    assert result == {
+        "status": 400,
+        "body": {"error": {"code": "INVALID_PRIORITY", "message": "priority is not supported"}},
+    }

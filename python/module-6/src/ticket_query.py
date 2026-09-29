@@ -21,7 +21,7 @@ def handle_list_tickets(query: dict[str, str] | None = None) -> dict[str, Any]:
 
     priority = query.get("priority", "").lower()
     if priority and priority not in VALID_PRIORITIES:
-        return {"status": 400, "body": {"message": "Invalid priority"}}
+        return invalid_query("INVALID_PRIORITY", "priority is not supported")
 
     items = [
         ticket
