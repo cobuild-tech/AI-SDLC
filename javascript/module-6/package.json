@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "lint": "node --check src/ticketQuery.js && node --check test/ticketQuery.test.js",
+    "lint": "node --check src/ticketQuery.js && node --check src/ticketComments.js && node --check test/ticketQuery.test.js && node --check test/ticketComments.test.js",
     "check:boundaries": "node scripts/check-boundaries.mjs"
   }
 }
