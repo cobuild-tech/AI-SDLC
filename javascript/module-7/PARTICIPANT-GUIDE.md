@@ -21,7 +21,7 @@ You need Node.js 20+, Git, and a coding agent installed (see `SETUP-CHECKLIST.md
    ```
 
    This creates an `AI-SDLC` folder with one folder per module.
-2. In VS Code, choose **File → Open Folder** and open the `AI-SDLC/module-7` folder. If VS Code asks whether to open the Git repository in a parent folder, click **Yes**.
+2. In VS Code, choose **File → Open Folder** and open the `AI-SDLC/javascript/module-7` folder. If VS Code asks whether to open the Git repository in a parent folder, click **Yes**.
 3. Open the terminal (**Terminal → New Terminal**). **Don't run `npm install`.** It's not needed, and it fails on purpose.
 
 You're on the `demo-exercise` branch, which holds the agent's work.

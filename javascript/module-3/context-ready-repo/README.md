@@ -41,4 +41,4 @@ The endpoint returns every ticket in the in-memory store.
 
 ## Starting branch
 
-Work starts in this folder (`module-3/context-ready-repo`) on the `demo-exercise` branch. The `solution` branch holds a reference answer in the same folder.
+Work starts in this folder (`javascript/module-3/context-ready-repo`) on the `demo-exercise` branch. The `solution` branch holds a reference answer in the same folder.

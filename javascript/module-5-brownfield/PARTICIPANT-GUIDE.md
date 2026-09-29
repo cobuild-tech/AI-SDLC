@@ -18,7 +18,7 @@ You need Node.js 20+, Git, and a coding agent installed (see `SETUP-CHECKLIST.md
    ```bash
    git clone --branch demo-exercise https://github.com/cobuild-tech/AI-SDLC.git
    ```
-2. The two labs are the `AI-SDLC/module-5-greenfield` and `AI-SDLC/module-5-brownfield` folders. Open **one at a time** in VS Code (**File → Open Folder**), and start your agent in that folder. If VS Code asks whether to open the Git repository in a parent folder, click **Yes**.
+2. The two labs are the `AI-SDLC/javascript/module-5-greenfield` and `AI-SDLC/javascript/module-5-brownfield` folders. Open **one at a time** in VS Code (**File → Open Folder**), and start your agent in that folder. If VS Code asks whether to open the Git repository in a parent folder, click **Yes**.
 
 ---
 

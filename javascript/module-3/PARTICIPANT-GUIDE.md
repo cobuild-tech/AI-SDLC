@@ -26,7 +26,7 @@ You need Node.js 20+, Git, and a coding agent installed (see `SETUP-CHECKLIST.md
    ```
 
    This creates an `AI-SDLC` folder with one folder per module.
-2. Open a terminal in `AI-SDLC/module-3` and install both repos:
+2. Open a terminal in `AI-SDLC/javascript/module-3` and install both repos:
 
    ```bash
    cd baseline-repo && npm install && npm test && cd ..
@@ -39,7 +39,7 @@ You need Node.js 20+, Git, and a coding agent installed (see `SETUP-CHECKLIST.md
 
 ## 2. Baseline: build with no context (8 min)
 
-1. In VS Code, choose **File → Open Folder** and open **`AI-SDLC/module-3/baseline-repo`**. Open exactly this folder, not `module-3`. If VS Code asks whether to open the Git repository in a parent folder, click **Yes**.
+1. In VS Code, choose **File → Open Folder** and open **`AI-SDLC/javascript/module-3/baseline-repo`**. Open exactly this folder, not `module-3`. If VS Code asks whether to open the Git repository in a parent folder, click **Yes**.
 2. Start your coding agent in this folder, in a **new chat**, and allow it to edit files and run commands.
 3. Type this exactly as written, the way a busy beginner would, and nothing else:
 
@@ -63,7 +63,7 @@ While it works, notice what it has to guess:
 
 ## 3. Context-ready: read the context first (7 min)
 
-1. Choose **File → New Window**, then **File → Open Folder** and open **`AI-SDLC/module-3/context-ready-repo`**.
+1. Choose **File → New Window**, then **File → Open Folder** and open **`AI-SDLC/javascript/module-3/context-ready-repo`**.
 2. Start your agent here in a **new chat** so nothing carries over from the baseline.
 
 Have a quick look at what this repo has that the baseline didn't:
@@ -147,7 +147,7 @@ Then check for yourself: run `npm test` in `context-ready-repo` (more than 2 tes
 
 ## 7. Compare the two repos (5 min)
 
-In a terminal in `AI-SDLC/module-3`, run:
+In a terminal in `AI-SDLC/javascript/module-3`, run:
 
 ```bash
 node compare-results.mjs
@@ -173,7 +173,7 @@ Finally, open the two versions of `src/routes/tickets.ts` side by side and compa
 
 ## 8. Compare with the solution (3 min)
 
-Want to see a reference answer? It's in `module-3/context-ready-repo` on the `solution` branch. Commit or discard your changes first, then run `git switch solution` to see it, and `git switch demo-exercise` to go back. Look at it only once you're done.
+Want to see a reference answer? It's in `javascript/module-3/context-ready-repo` on the `solution` branch. Commit or discard your changes first, then run `git switch solution` to see it, and `git switch demo-exercise` to go back. Look at it only once you're done.
 
 ---
 
